@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <title>Noël Magique</title>
 
+<!-- Rendre le site responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
@@ -41,6 +45,10 @@ body {
 #intro h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3em;
+}
+
+#intro p {
+    font-size: 1.2em;
 }
 
 #intro button {
@@ -141,6 +149,39 @@ body {
 
 @keyframes fall { to { transform: translateY(110vh); } }
 
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+    #intro h1 {
+        font-size: 2em;
+    }
+
+    #intro p {
+        font-size: 1em;
+    }
+
+    #intro button, .controls button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+
+    .card {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    .photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .message .title {
+        font-size: 1.2em;
+    }
+
+    .message-text {
+        font-size: 1em;
+    }
+}
 </style>
 </head>
 
